@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <sys/wait.h>
-
+#include <sys/types.h>
+#include <sys/wait.h> 
 
 int main(void){
     for (int i = 0;  i < 3; i++){
