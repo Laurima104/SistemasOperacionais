@@ -38,6 +38,6 @@ Confirme que o canto inferior esquerdo do VS Code indica **WSL: Debian** ou **WS
 ## Atividades
 
 - [Aula 05-06](Aula05-06/README.md): criação e sincronização de processos com `fork`.
-- [Aula 09-10](Aula09-10/README.md): ordenação por baldes (Bucket Sort) com arquivos de entrada.
+- [Aula 09-10](Aula09-10/README.md): criação e junção de threads tematizado com ordenação por baldes (Bucket Sort) com arquivos de entrada(serial e paralelizado).
 
 Cada README de aula contém os comandos de compilação e execução próprios daquela atividade. Os executáveis gerados são locais e não precisam ser enviados ao repositório.

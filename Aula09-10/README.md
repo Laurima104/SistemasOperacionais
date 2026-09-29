@@ -1,6 +1,6 @@
 # Aula 09-10: Bucket Sort
 
-O programa `bucket_sort.c` ordena números inteiros lidos de um arquivo e informa o tempo de ordenação. Os arquivos de exemplo estão em `entradas/`.
+O programa `bucket_sort.c` ordena números inteiros lidos de um arquivo em formato serial e informa o tempo de ordenação, enquanto `thread_bucket_sort` faz a ordenação separada em threads. Os arquivos de exemplo estão em `entradas/`.
 
 ## Compilar
 
@@ -9,6 +9,7 @@ No terminal WSL, a partir da raiz do repositório:
 ```bash
 cd Aula09-10
 gcc -Wall -Wextra -O2 bucket_sort.c -o bucket_sort
+gcc -Wall -Wextra -O2 thread_bucket_sort.c -o thread_bucket_sort
 ```
 
 ## Executar
@@ -18,12 +19,21 @@ Sem argumentos, o programa lê `entradas/pequena.txt`:
 ```bash
 ./bucket_sort
 ```
+OU
+```bash
+./thread_bucket_sort
+```
 
 Para escolher outro arquivo, passe o caminho como argumento:
 
 ```bash
 ./bucket_sort entradas/media.txt
 ./bucket_sort entradas/grande.txt
+```
+OU
+```bash
+./theard_bucket_sort entradas/media.txt
+./thread_bucket_sort entradas/grande.txt
 ```
 
 Os caminhos são relativos à pasta `Aula09-10`, então execute os comandos a partir dela. A execução com `grande.txt` imprime todos os valores ordenados; para guardar essa saída em vez de exibi-la no terminal, use:
