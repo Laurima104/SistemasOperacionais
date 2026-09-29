@@ -44,5 +44,4 @@ int main(void){
     }
     printf("Pai: todos Terminaram\n");
     return 0;
-    
 }
